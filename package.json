@@ -1,0 +1,40 @@
+{
+  "name": "afro-vue3",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "typecheck": "vue-tsc --project tsconfig.json",
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "@icon-park/vue-next": "^1.4.2",
+    "@popperjs/core": "^2.11.8",
+    "@vueuse/core": "^10.7.2",
+    "axios": "1.6.0",
+    "default-passive-events": "^2.0.0",
+    "echarts": "^5.4.2",
+    "element-plus": "2.5.5",
+    "lodash-es": "^4.17.21",
+    "pinia": "^2.1.4",
+    "sass": "^1.62.1",
+    "v-calendar": "^3.1.2",
+    "vue": "3.3.9",
+    "vue-cropper": "^1.1.1",
+    "vue-router": "^4.2.2",
+    "vuedraggable": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.22.3",
+    "@types/echarts": "^4.9.22",
+    "@types/node": "^20.2.5",
+    "@vitejs/plugin-vue": "^4.1.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vue-tsc": "^1.4.2"
+  }
+}

@@ -1,0 +1,2 @@
+注意views路径和下面的匹配
+const modules = import.meta.glob<object>('/src/components/layout/right/main/views/**/*.vue')

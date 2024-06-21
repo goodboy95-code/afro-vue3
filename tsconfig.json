@@ -1,0 +1,28 @@
+{
+  "include": [
+    "types/*.d.ts",
+    "src/**/*",
+    "src/**/*.vue",
+    "src/assets/map/json/province/*.json"
+  ],
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "lib": [
+      "ESNext",
+      "dom"
+    ],
+    "allowImportingTsExtensions": true,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "./types"
+    ],
+    "paths": {
+      "/src/*": ["./src/*"]
+    },
+    "noEmit": true,
+  }
+}

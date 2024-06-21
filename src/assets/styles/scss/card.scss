@@ -1,0 +1,22 @@
+@mixin cardTheme {
+  margin-bottom: 20px;
+}
+
+@mixin cardThemeCenter {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin cardHeaderCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin cardHeaderSpaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

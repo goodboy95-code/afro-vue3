@@ -1,0 +1,26 @@
+@use '/src/assets/styles/variables.module' as theme;
+
+@forward "element-plus/theme-chalk/src/dark/var.scss" with (
+  $colors: (
+    'white': #ffffff,
+    'black': #000000,
+    'primary': (
+      'base': map-get(theme.$theme1,'$color-2'),
+    ),
+    'success': (
+      'base': map-get(theme.$theme1,'$color-3'),
+    ),
+    'warning': (
+      'base': map-get(theme.$theme1,'$color-4'),
+    ),
+    'danger': (
+      'base': map-get(theme.$theme1,'$color-5'),
+    ),
+    'error': (
+      'base': map-get(theme.$theme1,'$color-5'),
+    ),
+    'info': (
+      'base': map-get(theme.$theme1,'$color-7'),
+    ),
+  ),
+);

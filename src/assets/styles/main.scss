@@ -1,0 +1,41 @@
+@use "element-plus/theme-chalk/src/dark/css-vars.scss" as *;
+
+:root {
+  //边框样式
+  --sys-border-style: var(--el-border-color-lighter) var(--el-border-width) var(--el-border-style);
+  //卡片的内阴影(按需使用)
+  --card-shadow: inset 0px 2px 4px 0 rgb(0 0 0 / .05);
+
+  .cell {
+    height: 28px;
+    display: flex;
+    align-items: center;
+  }
+
+  .el-form-item{
+    align-items: center;
+  }
+}
+
+html, body, #app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html.dark .el-card {
+  --el-card-bg-color: var(--el-bg-color)
+}
+
+#app {
+  display: flex;
+}
+
+
+.el-scrollbar__bar {
+  right: 0;
+}
+
+a {
+  text-decoration: none;
+}

@@ -1,0 +1,81 @@
+@use '/src/assets/styles/variables.module' as theme;
+@use 'element-plus/theme-chalk/src/mixins/function' as f;
+
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'white': #ffffff,
+    'black': #000000,
+    'primary': (
+      'base': map-get(theme.$theme1,'$color-2'),
+    ),
+    'success': (
+      'base': map-get(theme.$theme1,'$color-3'),
+    ),
+    'warning': (
+      'base': map-get(theme.$theme1,'$color-4'),
+    ),
+    'danger': (
+      'base': map-get(theme.$theme1,'$color-5'),
+    ),
+    'error': (
+      'base': map-get(theme.$theme1,'$color-5'),
+    ),
+    'info': (
+      'base': map-get(theme.$theme1,'$color-7'),
+    ),
+  ),
+  $bg-color: (
+    '': #ffffff,
+    'overlay': #f9f9f9,
+    'page': #ededed,
+  ),
+  $border-color:(
+    '': #dcdfe6,
+    'light': #e4e7ed,
+    'lighter': #ebeef5,
+    'extra-light': #f2f6fc,
+    'dark': #d4d7de,
+    'darker': #cdd0d6,
+  ),
+  $text-color:(
+    'primary': #303133,
+    'regular': #606266,
+    'secondary': #909399,
+    'placeholder': #a8abb2,
+    'disabled': #c0c4cc,
+  ),
+  $menu: (
+    'bg-color':  #{map-get(theme.$theme1,'$color-10')},
+  ),
+  $table:(
+    'border-color': f.getCssVar('border-color-lighter'),
+    'header-text-color': f.getCssVar('text-color-primary'),
+    'row-hover-bg-color': f.getCssVar('bg-color-page'),
+    'header-bg-color': f.getCssVar('bg-color-overlay'),
+  ),
+  $pagination:(
+    'bg-color': f.getCssVar('bg-color'),
+    'button-disabled-bg-color': f.getCssVar('text-color-secondary'),
+    'button-bg-color': f.getCssVar('bg-color'),
+  ),
+  $card:(
+    'border-color': f.getCssVar('border-color'),
+    'border-radius': .40rem,
+    'padding': 20px,
+    //'bg-color': f.getCssVar('bg-color-overlay'),
+  ),
+  $tree: (
+    'node-hover-bg-color': f.getCssVar('bg-color-page'),
+  ),
+/*  $input: (
+    'bg-color': f.getCssVar('bg-color'),
+  ),*/
+  $calendar: (
+    'selected-bg-color': f.getCssVar('color', 'primary'),
+    'cell-width': 85px,
+  ),
+  $statistic: (
+  ),
+);
+
+@use "./dark.scss";
